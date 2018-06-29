@@ -1,0 +1,3 @@
+rootProject.name = 'DWR_App'
+
+include ':app'
