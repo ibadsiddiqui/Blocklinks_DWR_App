@@ -14,6 +14,10 @@ import { Images } from '../Themes'
 import styles from './Styles/LaunchScreenStyles'
 
 export default class LaunchScreen extends Component {
+  onPressLogin(){
+      const { navigate } = this.props.navigation;
+      navigate('LoginScreen')
+  }
   render () {
     return (
       <View style={styles.mainContainer}>
@@ -27,7 +31,7 @@ export default class LaunchScreen extends Component {
 
           <View style={styles.section}>
             <View>
-              <TouchableOpacity style={styles.btnLogin}>
+              <TouchableOpacity style={styles.btnLogin} onPress={this.onPressLogin.bind(this)}>
                 <Text style={styles.btnLoginText}>Login</Text>
               </TouchableOpacity>
             </View>
