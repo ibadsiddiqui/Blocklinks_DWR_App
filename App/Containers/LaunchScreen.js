@@ -32,12 +32,7 @@ export default class LaunchScreen extends Component {
               </TouchableOpacity>
             </View>
 
-            <View>
-            <View style={{ borderBottomColor: 'black', borderBottomWidth: 1, }}
-/>
-                <Text style={styles.sectionText}>OR</Text>  
-            </View>
-
+            <View style={{ borderBottomColor: 'black', borderBottomWidth: 1}} />
 
             <View>
               <TouchableOpacity style={styles.btnRegister}>
