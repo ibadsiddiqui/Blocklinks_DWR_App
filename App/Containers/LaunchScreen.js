@@ -1,5 +1,13 @@
 import React, { Component } from 'react'
-import { ScrollView, Text, Image, View } from 'react-native'
+import { 
+  ScrollView,
+  TouchableOpacity,
+  StatusBar,
+  Button , 
+  Text, 
+  Image,
+   View 
+} from 'react-native'
 import { Images } from '../Themes'
 
 // Styles
@@ -9,17 +17,33 @@ export default class LaunchScreen extends Component {
   render () {
     return (
       <View style={styles.mainContainer}>
-        <Image source={Images.background} style={styles.backgroundImage} resizeMode='stretch' />
+       <StatusBar translucent={true} hidden={true}/>
         <ScrollView style={styles.container}>
           <View style={styles.centered}>
             <Image source={Images.launch} style={styles.logo} />
+            <Text style={styles.heading}>BlockLinks</Text>
+            <Text style={styles.subHeading}>Technologies</Text>
           </View>
 
-          <View style={styles.section} >
-            <Image source={Images.ready} />
-            <Text style={styles.sectionText}>
-              This probably isn't what your app is going to look like. Unless your designer handed you this screen and, in that case, congrats! You're ready to ship. For everyone else, this is where you'll see a live preview of your fully functioning app using Ignite.
-            </Text>
+          <View style={styles.section}>
+            <View>
+              <TouchableOpacity style={styles.btnLogin}>
+                <Text style={styles.btnLoginText}>Login</Text>
+              </TouchableOpacity>
+            </View>
+
+            <View>
+            <View style={{ borderBottomColor: 'black', borderBottomWidth: 1, }}
+/>
+                <Text style={styles.sectionText}>OR</Text>  
+            </View>
+
+
+            <View>
+              <TouchableOpacity style={styles.btnRegister}>
+                <Text style={styles.btnRegisterText}>New? Register here.</Text>  
+              </TouchableOpacity>
+            </View>
           </View>
 
         </ScrollView>
