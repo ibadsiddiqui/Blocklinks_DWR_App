@@ -14,6 +14,10 @@ import styles from './Styles/LoginScreenStyle'
 
 
 export default class LoginScreen extends Component {  
+  onSubmit(){
+    const { navigate } = this.props.navigation;
+    navigate('MainMenuScreen')
+  }
   render () {
     return (
       <View style={styles.container}>
@@ -36,7 +40,7 @@ export default class LoginScreen extends Component {
         </View>
 
         <View style={styles.buttonContainer}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={this.onSubmit.bind(this)}>
             <Text style={styles.button}>
               Sign In
             </Text>

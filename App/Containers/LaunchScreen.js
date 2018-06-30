@@ -14,10 +14,12 @@ import { Images } from '../Themes'
 import styles from './Styles/LaunchScreenStyles'
 
 export default class LaunchScreen extends Component {
+  
   onPressLogin(){
       const { navigate } = this.props.navigation;
       navigate('LoginScreen')
   }
+
   render () {
     return (
       <View style={styles.mainContainer}>
