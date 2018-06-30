@@ -26,7 +26,7 @@ export default StyleSheet.create({
     fontSize: 20,
     marginLeft: Metrics.doubleBaseMargin * 1.2,
     fontFamily: "Verdana",
-    color: "#7c4dff",
+    color: "#00796b",
 
   },
   btnRegister:{
@@ -39,22 +39,31 @@ export default StyleSheet.create({
     fontSize: 20,
     fontFamily: "Verdana",
     marginLeft: 8,
-    color: "#e64a19",
+    color: "#0097A7",
 
   },
   heading:{
     fontSize: 30,
   },
+  infoText:{
+    fontSize: 15,
+    color: "red"
+  },
+  infoView:{
+    margin: 10,
+    marginLeft: Metrics.screenWidth / 5.4,
+    marginTop: Metrics.screenWidth / 3.2
+  },
   subHeading:{
     fontSize: 15,
     paddingLeft: 90,
-    marginBottom: Metrics.baseMargin,
+    // marginBottom: Metrics.baseMargin,
 
   },
   sectionText:{
     fontSize: 15,
     marginLeft: Metrics.doubleBaseMargin * 6.2,
     padding: 10
-  }
+  },
 
 })

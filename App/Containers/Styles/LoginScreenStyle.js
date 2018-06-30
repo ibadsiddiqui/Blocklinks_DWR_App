@@ -7,11 +7,12 @@ export default StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-start',
     alignItems: 'stretch',
-    paddingTop:20,
-    backgroundColor: '#aaa'
+    paddingTop: 20,
+    backgroundColor: '#006064'
   },
   titleContainer:{
-    padding: 10
+    padding: 10,
+    marginTop: Metrics.screenHeight * 0.25  
   },
   title:{
     color: 'white',
@@ -26,6 +27,16 @@ export default StyleSheet.create({
     backgroundColor: 'white'
   },
   textInput: {
-    height: 26
+    height: 36
+  },
+  buttonContainer:{
+    padding:30,
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center'
+  },
+  button:{
+    fontSize: 30,
+    color: 'white'
   }
 })

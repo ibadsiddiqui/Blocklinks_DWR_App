@@ -45,6 +45,11 @@ export default class LaunchScreen extends Component {
             </View>
           </View>
 
+          <View style={styles.infoView}>
+            <Text style={styles.infoText}>
+              For Distributors / Retailers / Sellers. 
+            </Text>
+          </View>
         </ScrollView>
       </View>
     )

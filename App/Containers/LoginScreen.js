@@ -35,6 +35,13 @@ export default class LoginScreen extends Component {
             style={styles.textInput}/>
         </View>
 
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity>
+            <Text style={styles.button}>
+              Sign In
+            </Text>
+          </TouchableOpacity>
+        </View>
         
 
       </View>  
