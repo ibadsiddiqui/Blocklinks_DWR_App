@@ -6,7 +6,7 @@ import { Images } from '../Themes'
 import styles from './Styles/LoginScreenStyle'
 
 
-export default class LoginScreen extends Component {
+export default class LoginScreen extends Component {  
   render () {
     return (
       <View style={styles.mainContainer}>

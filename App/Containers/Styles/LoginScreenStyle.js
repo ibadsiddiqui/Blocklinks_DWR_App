@@ -8,7 +8,7 @@ export default StyleSheet.create({
     backgroundColor: 'white'
   },
   logo: {
-    marginTop: Metrics.doubleSection * 2 ,
+    marginTop: Metrics.doubleSection * 1.5 ,
     height: Metrics.images.logo,
     width: Metrics.images.logo,
     resizeMode: 'contain',
@@ -48,7 +48,7 @@ export default StyleSheet.create({
   subHeading:{
     fontSize: 15,
     paddingLeft: 90,
-    marginBottom: Metrics.baseMargin,
+    marginBottom: Metrics.baseMargin * 2.5,
 
   },
   sectionText:{
