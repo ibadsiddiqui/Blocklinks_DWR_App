@@ -1,32 +1,77 @@
 import React, { Component } from 'react'
-import { ScrollView, Text, KeyboardAvoidingView } from 'react-native'
-import { connect } from 'react-redux'
-// Add Actions - replace 'Your' with whatever your reducer is called :)
-// import YourActions from '../Redux/YourRedux'
+import { 
+  ScrollView, 
+  Text, 
+  KeyboardAvoidingView,
+  View,
+  TouchableOpacity
+} from 'react-native'
+
 
 // Styles
 import styles from './Styles/RecieveProductScreenStyle'
 
-class RecieveProductScreen extends Component {
+export default class RecieveProductScreen extends Component {
   render () {
     return (
-      <ScrollView style={styles.container}>
+      <View style={styles.container}>
         <KeyboardAvoidingView behavior='position'>
-          <Text>RecieveProductScreen</Text>
+
+          <View style={styles.titleContainer}>
+            <Text style={styles.title}>
+              Main Menu
+            </Text>
+            <View style={{ borderBottomColor: 'black', borderBottomWidth: 1, width: 175}} />      
+          </View>
+
+          <View>
+            <Text>Pallet #: </Text>
+          </View>
+
+          <View>
+            <Text>Box #: </Text>
+          </View>
+
+          <View>
+            <Text>Unique ID:</Text>
+          </View>
+
+          <View>
+            <Text>User ID:</Text>
+        
+          </View>
+
+          <View>
+            <Text>Business Name</Text>
+  
+          </View>
+
+          <View>
+            <Text>Time/Date</Text>
+          </View>
+
+          <View>
+            <Text>Geolocation</Text>
+          </View>
+
+          <View style={styles.buttonContainer}>
+            <TouchableOpacity >
+              <Text style={styles.button}>
+                Submit
+              </Text>
+            </TouchableOpacity>
+          </View>
+
+          <View style={styles.buttonContainer}>
+            <TouchableOpacity >
+              <Text style={styles.button}>
+                Cancel
+              </Text>
+            </TouchableOpacity>
+          </View>
+
         </KeyboardAvoidingView>
-      </ScrollView>
+      </View>
     )
   }
 }
-
-const mapStateToProps = (state) => {
-  return {
-  }
-}
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(RecieveProductScreen)
