@@ -5,6 +5,11 @@ import { ScrollView, Text, View,TouchableOpacity } from 'react-native'
 import styles from './Styles/MainMenuScreenStyle'
 
 export default class MainMenuScreen extends Component {
+  onRecieveProductClick() {    
+      const { navigate } = this.props.navigation;
+      navigate('RecieveProductScreen')
+  }
+
   render () {
     return (
       <View style={styles.container}>
@@ -18,7 +23,7 @@ export default class MainMenuScreen extends Component {
 
 
         <View style={styles.buttonContainer}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={this.onRecieveProductClick.bind(this)}>
             <Text style={styles.button}>
               Recieve Product(s)
             </Text>
