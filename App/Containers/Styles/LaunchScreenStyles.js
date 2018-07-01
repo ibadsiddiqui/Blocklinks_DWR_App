@@ -14,7 +14,9 @@ export default StyleSheet.create({
     resizeMode: 'contain',
   },
   centered: {
-    alignItems: 'center'
+    alignItems: 'center',
+    padding:10,
+    paddingTop: Metrics.screenWidth * 0.25
   },
   btnLogin:{
     marginLeft: Metrics.doubleBaseMargin * 3.8,
@@ -51,13 +53,14 @@ export default StyleSheet.create({
   },
   infoView:{
     margin: 10,
-    marginLeft: Metrics.screenWidth / 5.4,
-    marginTop: Metrics.screenWidth / 3.2
+    marginLeft: Metrics.screenWidth * 0.15,
+    marginTop: Metrics.screenWidth * 0.5
   },
+
   subHeading:{
     fontSize: 15,
     paddingLeft: 90,
-    // marginBottom: Metrics.baseMargin,
+    marginBottom: Metrics.screenHeight * 0.15,
 
   },
   sectionText:{
