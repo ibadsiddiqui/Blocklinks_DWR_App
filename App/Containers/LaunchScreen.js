@@ -23,7 +23,8 @@ export default class LaunchScreen extends Component {
   render () {
     return (
       <View style={styles.mainContainer}>
-       <StatusBar translucent={true} hidden={true}/>
+
+        <StatusBar translucent={true} hidden={true}/>
         <ScrollView style={styles.container}>
           <View style={styles.centered}>
             <Image source={Images.launch} style={styles.logo} />
@@ -32,6 +33,7 @@ export default class LaunchScreen extends Component {
           </View>
 
           <View style={styles.section}>
+
             <View>
               <TouchableOpacity style={styles.btnLogin} onPress={this.onPressLogin.bind(this)}>
                 <Text style={styles.btnLoginText}>Login</Text>
@@ -45,6 +47,7 @@ export default class LaunchScreen extends Component {
                 <Text style={styles.btnRegisterText}>New? Register here.</Text>  
               </TouchableOpacity>
             </View>
+
           </View>
 
           <View style={styles.infoView}>
@@ -52,6 +55,7 @@ export default class LaunchScreen extends Component {
               For Distributors / Retailers / Sellers. 
             </Text>
           </View>
+
         </ScrollView>
       </View>
     )
