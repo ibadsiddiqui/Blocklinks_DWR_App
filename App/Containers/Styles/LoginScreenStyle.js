@@ -28,7 +28,8 @@ export default StyleSheet.create({
     backgroundColor: '#ef5350'
   },
   textInput: {
-    height: 36
+    height: 36,
+    color:"white"
   },
   buttonContainer:{
     marginTop: 10,
@@ -44,6 +45,6 @@ export default StyleSheet.create({
   },
   button:{
     fontSize: 15,
-    color: 'black'
+    color: 'white'
   }
 })

@@ -8,13 +8,19 @@ export default StyleSheet.create({
     justifyContent: 'flex-start',
     alignItems: 'stretch',
     paddingTop: 20,
-    backgroundColor: '#006064'
+    backgroundColor: 'white'
   },
   buttonContainer:{ 
-    padding:30,
+    padding:10,
+    margin: 10,
+    left: Metrics.screenWidth * 0.18,
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
+    backgroundColor: '#e64a19',
+    width: 210,
+    borderRadius: 5,
+
   },
   button:{
     fontSize: 20,
@@ -22,11 +28,12 @@ export default StyleSheet.create({
   },
   titleContainer:{
     padding: 10,
-    paddingLeft: Metrics.screenWidth * 0.25,
-    marginTop: Metrics.screenHeight * 0.1  
+    paddingLeft: Metrics.screenWidth * 0.27,
+    marginTop: Metrics.screenHeight * 0.1,  
+    marginBottom: Metrics.baseMargin
   },
   title:{
-    color: 'white',
+    color: '#263238',
     fontSize: 35
   },
 })
