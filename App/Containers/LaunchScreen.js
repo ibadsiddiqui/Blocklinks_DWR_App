@@ -27,7 +27,7 @@ export default class LaunchScreen extends Component {
         <StatusBar translucent={true} hidden={true}/>
         <ScrollView style={styles.container}>
           <View style={styles.centered}>
-            <Image source={Images.launch} style={styles.logo} />
+            {/* <Image source={Images.launch} style={styles.logo} /> */}
             <Text style={styles.heading}>BlockLinks</Text>
             <Text style={styles.subHeading}>Technologies</Text>
           </View>
@@ -52,7 +52,7 @@ export default class LaunchScreen extends Component {
 
           <View style={styles.infoView}>
             <Text style={styles.infoText}>
-              For Distributors / Retailers / Sellers. 
+              For Distributors / Retailers / Sellers Only. 
             </Text>
           </View>
 
