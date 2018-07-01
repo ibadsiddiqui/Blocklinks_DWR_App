@@ -1,32 +1,63 @@
 import React, { Component } from 'react'
-import { ScrollView, Text, KeyboardAvoidingView } from 'react-native'
-import { connect } from 'react-redux'
-// Add Actions - replace 'Your' with whatever your reducer is called :)
-// import YourActions from '../Redux/YourRedux'
+import { ScrollView, Text, View,TouchableOpacity } from 'react-native'
 
 // Styles
 import styles from './Styles/MainMenuScreenStyle'
 
-class MainMenuScreen extends Component {
+export default class MainMenuScreen extends Component {
   render () {
     return (
-      <ScrollView style={styles.container}>
-        <KeyboardAvoidingView behavior='position'>
-          <Text>MainMenuScreen</Text>
-        </KeyboardAvoidingView>
-      </ScrollView>
+      <View style={styles.container}>
+        <View style={styles.titleContainer}>
+          <Text style={styles.title}>
+            Main Menu
+          </Text>
+        <View style={{ borderBottomColor: 'black', borderBottomWidth: 1, width: 175}} />
+        </View>
+        
+
+
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity>
+            <Text style={styles.button}>
+              Recieve Product(s)
+            </Text>
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity>
+            <Text style={styles.button}>
+              Inventory Details
+            </Text>
+          </TouchableOpacity>
+        </View>
+        
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity>
+            <Text style={styles.button}>
+              Sale
+            </Text>
+          </TouchableOpacity>
+        </View>
+        
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity>
+            <Text style={styles.button}>
+              Sale Returns
+            </Text>
+          </TouchableOpacity>
+        </View>
+        
+        <View style={styles.buttonContainer}>
+          <TouchableOpacity>
+            <Text style={styles.button}>
+              Reward Balance
+            </Text>
+          </TouchableOpacity>
+        </View>
+
+      </View>  
     )
   }
 }
-
-const mapStateToProps = (state) => {
-  return {
-  }
-}
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(MainMenuScreen)
