@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ScrollView, Text, View,TouchableHighlight } from 'react-native'
+import { ScrollView, Text, View,TouchableOpacity } from 'react-native'
 
 // Styles
 import styles from './Styles/MainMenuScreenStyle'
@@ -23,43 +23,43 @@ export default class MainMenuScreen extends Component {
 
 
         <View style={styles.buttonContainer}>
-          <TouchableHighlight onPress={this.onRecieveProductClick.bind(this)}>
+          <TouchableOpacity onPress={this.onRecieveProductClick.bind(this)}>
             <Text style={styles.button}>
               Recieve Product(s)
             </Text>
-          </TouchableHighlight>
+          </TouchableOpacity>
         </View>
 
         <View style={styles.buttonContainer}>
-          <TouchableHighlight>
+          <TouchableOpacity>
             <Text style={styles.button}>
               Inventory Details
             </Text>
-          </TouchableHighlight>
+          </TouchableOpacity>
         </View>
         
         <View style={styles.buttonContainer}>
-          <TouchableHighlight>
+          <TouchableOpacity>
             <Text style={styles.button}>
               Sale
             </Text>
-          </TouchableHighlight>
+          </TouchableOpacity>
         </View>
         
         <View style={styles.buttonContainer}>
-          <TouchableHighlight>
+          <TouchableOpacity>
             <Text style={styles.button}>
               Sale Returns
             </Text>
-          </TouchableHighlight>
+          </TouchableOpacity>
         </View>
         
         <View style={styles.buttonContainer}>
-          <TouchableHighlight>
+          <TouchableOpacity>
             <Text style={styles.button}>
               Reward Balance
             </Text>
-          </TouchableHighlight>
+          </TouchableOpacity>
         </View>
 
       </View>  
