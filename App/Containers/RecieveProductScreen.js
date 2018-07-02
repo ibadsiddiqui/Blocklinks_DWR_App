@@ -4,7 +4,8 @@ import {
   Text, 
   KeyboardAvoidingView,
   View,
-  TouchableOpacity
+  TouchableOpacity,
+  TextInput
 } from 'react-native'
 
 
@@ -19,43 +20,54 @@ export default class RecieveProductScreen extends Component {
 
           <View style={styles.titleContainer}>
             <Text style={styles.title}>
-              Main Menu
+              Recieve Product
             </Text>
-            <View style={{ borderBottomColor: 'black', borderBottomWidth: 1, width: 175}} />      
+            <View style={{ borderBottomColor: 'black', borderBottomWidth: 1, width: 250}} />      
+
           </View>
 
-          <View>
-            <Text>Pallet #: </Text>
-          </View>
+          <View style={styles.centered}>
 
-          <View>
-            <Text>Box #: </Text>
-          </View>
+            <View style={styles.rowView}>
+              <Text style={styles.rowText}>Pallet #: </Text>
+              <TextInput style={[styles.field, styles.palletPadding]}/>
+            </View>
 
-          <View>
-            <Text>Unique ID:</Text>
-          </View>
+            <View style={styles.rowView}>
+              <Text style={styles.rowText}>Box #: </Text>
+              <TextInput style={[styles.field, styles.boxInputPadding]}/>
+            </View>
 
-          <View>
-            <Text>User ID:</Text>
-        
-          </View>
+            <View style={styles.rowView}>
+              <Text style={styles.rowText}>Unique ID:</Text>
+              <TextInput style={styles.field}/>
+            </View>
 
-          <View>
-            <Text>Business Name</Text>
-  
-          </View>
+            <View style={styles.userInfo}>
+              <View style={styles.rowView}>
+                <Text>User ID:</Text>
+                <Text style={styles.userIDStyle}>Ibad-0110</Text>        
+              </View>
 
-          <View>
-            <Text>Time/Date</Text>
-          </View>
+              <View style={styles.rowView}>
+                <Text>Business: </Text>
+                <Text style={styles.businessStyle}>Gul Ahmed Garments.</Text>
+              </View>
 
-          <View>
-            <Text>Geolocation</Text>
-          </View>
+              <View style={styles.rowView}>
+                <Text>Time/Date: </Text>
+                <Text>Time here</Text>
+              </View>
 
+              <View style={styles.rowView}>
+                <Text>Geolocation: </Text>
+                <Text>Address Here</Text>
+              </View>
+            </View>
+
+          </View>
           <View style={styles.buttonContainer}>
-            <TouchableOpacity >
+            <TouchableOpacity>
               <Text style={styles.button}>
                 Submit
               </Text>
