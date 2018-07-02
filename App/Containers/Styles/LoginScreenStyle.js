@@ -33,7 +33,7 @@ export default StyleSheet.create({
   },
   buttonContainer:{
     marginTop: 10,
-    left: Metrics.screenWidth * 0.35,
+    left: Metrics.screenWidth * 0.37,
     padding:10,
     flexDirection: 'row',
     justifyContent: 'space-around',
