@@ -3,6 +3,9 @@ import { Metrics, ApplicationStyles } from '../../Themes/'
 
 export default StyleSheet.create({
   ...ApplicationStyles.screen,
+  addressStyle:{
+    marginLeft: Metrics.baseMargin * 0.3
+  },
   
   container:{
     flex: 1,
@@ -28,11 +31,13 @@ export default StyleSheet.create({
     fontSize: 20,
     color: 'white'
   },
+
   businessStyle:{
-    marginLeft: 10
+    marginLeft: Metrics.baseMargin * 2
   },
+
   boxInputPadding:{
-    marginLeft: 30
+    marginLeft: Metrics.baseMargin * 4
   },
 
   centered: {
@@ -41,10 +46,7 @@ export default StyleSheet.create({
     paddingTop: Metrics.screenWidth * 0.2
   },
 
-  rowView:{
-    flexDirection: 'row',
-  },
-
+  
   field:{
     borderRadius: 5,
     padding: 5,
@@ -54,14 +56,17 @@ export default StyleSheet.create({
     backgroundColor: '#ef5350',
     width: 150
   },
-
+  
   palletPadding:{
-    marginLeft: 20
+    marginLeft: Metrics.baseMargin * 3
   },
   
   rowText:{
     fontSize: 15,
     marginTop: 15,
+  },
+  rowView:{
+    flexDirection: 'row',
   },
   
   textInput: {
@@ -75,18 +80,23 @@ export default StyleSheet.create({
     // marginTop: Metrics.screenHeight * 0.1,  
     marginBottom: Metrics.baseMargin
   },
-
+  
   title:{
     color: '#263238',
     fontSize: 35
   },
-
-  userIDStyle:{
-    marginLeft: 25
+  timeStyle:{
+    marginLeft: Metrics.baseMargin
   },
-
+  userIDStyle:{
+    marginLeft:  Metrics.baseMargin * 3.5
+  },
+  
   userInfo:{
     padding: 10,
     paddingLeft: 20
+  },
+  uniqueIDPadding:{
+    marginLeft: Metrics.baseMargin * 2
   }
 })

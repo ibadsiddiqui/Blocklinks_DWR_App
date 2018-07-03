@@ -40,7 +40,7 @@ export default class RecieveProductScreen extends Component {
 
             <View style={styles.rowView}>
               <Text style={styles.rowText}>Unique ID:</Text>
-              <TextInput style={styles.field}/>
+              <TextInput style={[styles.field, styles.uniqueIDPadding]}/>
             </View>
 
             <View style={styles.userInfo}>
@@ -56,12 +56,12 @@ export default class RecieveProductScreen extends Component {
 
               <View style={styles.rowView}>
                 <Text>Time/Date: </Text>
-                <Text>Time here</Text>
+                <Text style={styles.timeStyle}>Time here</Text>
               </View>
 
               <View style={styles.rowView}>
                 <Text>Geolocation: </Text>
-                <Text>Address Here</Text>
+                <Text style={styles.addressStyle}>Address Here</Text>
               </View>
             </View>
 
