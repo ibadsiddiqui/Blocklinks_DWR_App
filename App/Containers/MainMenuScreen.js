@@ -10,6 +10,10 @@ export default class MainMenuScreen extends Component {
       navigate('RecieveProductScreen')
   }
 
+  onInventoryDetailClick() {    
+    const { navigate } = this.props.navigation;
+    navigate('InventoryDetailsScreen')
+}
   render () {
     return (
       <View style={styles.container}>
@@ -31,7 +35,7 @@ export default class MainMenuScreen extends Component {
         </View>
 
         <View style={styles.buttonContainer}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={this.onInventoryDetailClick.bind(this)}>
             <Text style={styles.button}>
               Inventory Details
             </Text>
