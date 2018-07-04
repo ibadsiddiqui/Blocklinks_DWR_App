@@ -1,4 +1,5 @@
 import { StackNavigator } from 'react-navigation'
+import InventoryDetailsScreen from '../Containers/InventoryDetailsScreen'
 import RecieveProductScreen from '../Containers/RecieveProductScreen'
 import MainMenuScreen from '../Containers/MainMenuScreen'
 import LoginScreen from '../Containers/LoginScreen'
@@ -8,6 +9,7 @@ import styles from './Styles/NavigationStyles'
 
 // Manifest of possible screens
 const PrimaryNav = StackNavigator({
+  InventoryDetailsScreen: { screen: InventoryDetailsScreen },
   RecieveProductScreen: { screen: RecieveProductScreen },
   MainMenuScreen: { screen: MainMenuScreen },
   LoginScreen: { screen: LoginScreen },
