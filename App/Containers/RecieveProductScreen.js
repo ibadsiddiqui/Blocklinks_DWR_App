@@ -15,12 +15,18 @@ import { Images } from '../Themes'
 import styles from './Styles/RecieveProductScreenStyle'
 
 export default class RecieveProductScreen extends Component {
+  onBackBtnPress(){
+    const {navigate} = this.props.navigation;
+    navigate('MainMenuScreen')
+  }
   render () {
     return (
       <View style={styles.container}>
         <KeyboardAvoidingView behavior='position'>
 
-          <Image source={Images.backButton} style={styles.backLogo}/>
+          <TouchableOpacity onPress={this.onBackBtnPress.bind(this)}>
+            <Image source={Images.backButton} style={styles.backLogo}/>
+          </TouchableOpacity>
           <View style={styles.titleContainer}>
             <Text style={styles.title}>
               Recieve Product
