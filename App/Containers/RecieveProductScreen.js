@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import { 
-  ScrollView, 
+  ScrollView,
+  Image, 
   Text, 
   KeyboardAvoidingView,
   View,
   TouchableOpacity,
-  TextInput
+  TextInput,
 } from 'react-native'
+import { Images } from '../Themes'
 
 
 // Styles
@@ -18,6 +20,7 @@ export default class RecieveProductScreen extends Component {
       <View style={styles.container}>
         <KeyboardAvoidingView behavior='position'>
 
+          <Image source={Images.backButton} style={styles.backLogo}/>
           <View style={styles.titleContainer}>
             <Text style={styles.title}>
               Recieve Product

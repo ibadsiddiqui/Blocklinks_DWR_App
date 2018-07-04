@@ -11,10 +11,12 @@ export default StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-start',
     alignItems: 'stretch',
-    paddingTop: 20,
     backgroundColor: 'white'
   },
-
+  backLogo:{
+    height: Metrics.images.large,
+    width: Metrics.images.large,
+  },
   buttonContainer:{ 
     padding:10,
     margin: 10,
