@@ -45,7 +45,7 @@ export default StyleSheet.create({
   centered: {
     alignItems: 'center',
     padding:10,
-    paddingTop: Metrics.screenWidth * 0.2
+    // paddingTop: Metrics.screenWidth * 0.2
   },
 
   
