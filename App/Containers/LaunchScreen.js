@@ -8,7 +8,6 @@ import {
   Image,
    View 
 } from 'react-native'
-import { Images } from '../Themes'
 
 // Styles
 import styles from './Styles/LaunchScreenStyles'
