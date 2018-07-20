@@ -13,7 +13,7 @@ export default class MainMenuScreen extends Component {
   onInventoryDetailClick() {    
     const { navigate } = this.props.navigation;
     navigate('InventoryDetailsScreen')
-}
+  }
   render () {
     return (
       <View style={styles.container}>
