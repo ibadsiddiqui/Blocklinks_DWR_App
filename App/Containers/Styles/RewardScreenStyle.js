@@ -24,12 +24,12 @@ export default StyleSheet.create({
     justifyContent: 'space-around',
     alignItems: 'center',
     backgroundColor: '#e64a19',
-    width: 210,
+    width: 110,
     borderRadius: 5,
   },
 
   button:{
-    fontSize: 20,
+    fontSize: 15,
     color: 'white'
   },
 
