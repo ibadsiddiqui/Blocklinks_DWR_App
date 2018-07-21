@@ -19,8 +19,7 @@ export default StyleSheet.create({
   },
   buttonContainer:{ 
     padding:10,
-    margin: 10,
-    left: Metrics.screenWidth * 0.18,
+    marginTop: Metrics.screenHeight * 0.12,
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
@@ -38,49 +37,18 @@ export default StyleSheet.create({
     marginLeft: Metrics.baseMargin * 2
   },
 
-  boxInputPadding:{
-    marginLeft: Metrics.baseMargin * 4
-  },
-
   centered: {
     alignItems: 'center',
     padding:10,
-    // paddingTop: Metrics.screenWidth * 0.2
   },
 
-  
-  field:{
-    borderRadius: 5,
-    padding: 5,
-    paddingLeft: 8,
-    margin: 7,
-    marginTop: 0,
-    backgroundColor: '#ef5350',
-    width: 150,
-    color: 'white'
-  },
-  
-  palletPadding:{
-    marginLeft: Metrics.baseMargin * 3
-  },
-  
-  rowText:{
-    fontSize: 15,
-    marginTop: 15,
-  },
   rowView:{
     flexDirection: 'row',
   },
-  
-  textInput: {
-    height: 36,
-    color:"white"
-  },
-  
+    
   titleContainer:{
     padding: 10,
     left: Metrics.screenWidth * 0.12,
-    // marginTop: Metrics.screenHeight * 0.1,  
     marginBottom: Metrics.baseMargin
   },
   
@@ -88,18 +56,20 @@ export default StyleSheet.create({
     color: '#263238',
     fontSize: 35
   },
-  timeStyle:{
-    marginLeft: Metrics.baseMargin
+
+  accountHeading:{
+    fontSize: 20,
+    fontWeight: "700",
+    marginTop: Metrics.screenHeight * 0.1
   },
-  userIDStyle:{
-    marginLeft:  Metrics.baseMargin * 3.5
+
+  balanceHeading:{
+    fontSize: 20,
+    fontWeight: "700",
+    marginTop: Metrics.screenHeight * 0.1
+
   },
-  
-  userInfo:{
-    padding: 10,
-    paddingLeft: 20
-  },
-  uniqueIDPadding:{
-    marginLeft: Metrics.baseMargin * 2
+  text:{
+    fontSize: 15
   }
 })
