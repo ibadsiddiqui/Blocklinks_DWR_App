@@ -56,7 +56,8 @@ export default StyleSheet.create({
     margin: 7,
     marginTop: 0,
     backgroundColor: '#ef5350',
-    width: 150
+    width: 150,
+    color: 'white'
   },
   
   palletPadding:{
