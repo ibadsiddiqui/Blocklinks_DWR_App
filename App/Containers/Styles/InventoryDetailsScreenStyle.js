@@ -35,10 +35,6 @@ export default StyleSheet.create({
     color: 'white'
   },
 
-  businessStyle:{
-    marginLeft: Metrics.baseMargin * 2
-  },
-
   boxInputPadding:{
     marginLeft: Metrics.baseMargin * 4
   },
@@ -80,7 +76,6 @@ export default StyleSheet.create({
   
   titleContainer:{
     alignItems: 'center',
-
   },
   
   title:{
@@ -88,40 +83,35 @@ export default StyleSheet.create({
     fontSize: 30,
 
   },
-  timeStyle:{
-    marginLeft: Metrics.baseMargin
-  },
-  
-  userInfo:{
-    padding: 10,
-    paddingLeft: 20
-  },
+
   uniqueIDPadding:{
     marginLeft: Metrics.baseMargin * 2
   },
+
   UPCIDPadding:{
     marginLeft: Metrics.baseMargin * 4
   },
-
+  
   tableHeading1style:{
     padding: 10,
     fontSize: 15,
     textDecorationLine: 'underline'
   },
+
   tableHeading2style:{
     padding: 10,
     marginLeft: Metrics.screenWidth * 0.2 ,
     fontSize: 15,
     textDecorationLine: 'underline'
-
   },
+
   tableHeading3style:{
     padding: 10,
     marginLeft: Metrics.screenWidth * 0.1,
     fontSize: 15,
     textDecorationLine: 'underline'
-
   },
+
   line:{ 
     borderBottomColor: 'black', 
     borderBottomWidth: Metrics.horizontalLineHeight, 
