@@ -3,16 +3,14 @@ import { Metrics, ApplicationStyles } from '../../Themes/'
 
 export default StyleSheet.create({
   ...ApplicationStyles.screen,
-  addressStyle:{
-    marginLeft: Metrics.baseMargin * 0.3
-  },
-  
+
   container:{
     flex: 1,
     justifyContent: 'flex-start',
     alignItems: 'stretch',
     backgroundColor: 'white'
   },
+
   backLogo:{
     height: Metrics.images.large,
     width: Metrics.images.large,
@@ -20,17 +18,16 @@ export default StyleSheet.create({
   buttonContainer:{ 
     padding:10,
     margin: 10,
-    left: Metrics.screenWidth * 0.18,
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
     backgroundColor: '#e64a19',
-    width: 210,
+    width: 110,
     borderRadius: 5,
   },
 
   button:{
-    fontSize: 20,
+    fontSize: 15,
     color: 'white'
   },
 
@@ -39,13 +36,12 @@ export default StyleSheet.create({
   },
 
   boxInputPadding:{
-    marginLeft: Metrics.baseMargin * 4
+    marginLeft: Metrics.screenWidth * 0.1
   },
 
   centered: {
     alignItems: 'center',
     padding:10,
-    // paddingTop: Metrics.screenWidth * 0.2
   },
 
   
@@ -56,12 +52,16 @@ export default StyleSheet.create({
     margin: 7,
     marginTop: 0,
     backgroundColor: '#ef5350',
-    width: 150,
+    width: 110,
     color: 'white'
   },
   
-  palletPadding:{
-    marginLeft: Metrics.baseMargin * 3
+  UniqueIDPadding:{
+    marginLeft: Metrics.screenWidth * 0.12
+  },
+  
+  retailerIDPadding:{
+    marginLeft: Metrics.screenWidth * 0.15
   },
   
   rowText:{
@@ -72,15 +72,8 @@ export default StyleSheet.create({
     flexDirection: 'row',
   },
   
-  textInput: {
-    height: 36,
-    color:"white"
-  },
-  
   titleContainer:{
     padding: 10,
-    left: Metrics.screenWidth * 0.12,
-    // marginTop: Metrics.screenHeight * 0.1,  
     marginBottom: Metrics.baseMargin
   },
   
@@ -89,17 +82,18 @@ export default StyleSheet.create({
     fontSize: 35
   },
   timeStyle:{
-    marginLeft: Metrics.baseMargin
-  },
-  userIDStyle:{
-    marginLeft:  Metrics.baseMargin * 3.5
+    marginRight: Metrics.screenWidth * 0.1
   },
   
-  userInfo:{
-    padding: 10,
-    paddingLeft: 20
-  },
+
   uniqueIDPadding:{
     marginLeft: Metrics.baseMargin * 2
+  },
+  TimePadding:{
+    marginLeft: Metrics.screenWidth * 0.12
+  },
+  GeolocationPadding:{
+    marginLeft: Metrics.screenWidth * 0.12
+
   }
 })
