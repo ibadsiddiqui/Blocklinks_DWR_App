@@ -22,19 +22,24 @@ export default class InventoryDetailsScreen extends Component {
     return (
       <View style={styles.container}>
         <KeyboardAvoidingView behavior='position'>
-
+          
           <TouchableOpacity onPress={this.onBackBtnPress.bind(this)}>
             <Image source={Images.backButton} style={styles.backLogo}/>
           </TouchableOpacity>
           <View style={styles.titleContainer}>
             <Text style={styles.title}>
-              Recieve Product
+              Inventory Detail
             </Text>
-            <View style={{ borderBottomColor: 'black', borderBottomWidth: 1, width: 250}} />      
+            <View style={{ borderBottomColor: 'black', borderBottomWidth: 1, width: 205}} />      
 
           </View>
 
           <View style={styles.centered}>
+
+            <View style={styles.rowView}>
+              <Text style={styles.rowText}>UPC# :</Text>
+              <TextInput style={[styles.field, styles.UPCIDPadding]}/>
+            </View>
 
             <View style={styles.rowView}>
               <Text style={styles.rowText}>Pallet #: </Text>
@@ -51,45 +56,41 @@ export default class InventoryDetailsScreen extends Component {
               <TextInput style={[styles.field, styles.uniqueIDPadding]}/>
             </View>
 
-            <View style={styles.userInfo}>
-              <View style={styles.rowView}>
-                <Text>User ID:</Text>
-                <Text style={styles.userIDStyle}>Ibad-0110</Text>        
-              </View>
+          </View>
 
-              <View style={styles.rowView}>
-                <Text>Business: </Text>
-                <Text style={styles.businessStyle}>Gul Ahmed Garments.</Text>
-              </View>
 
-              <View style={styles.rowView}>
-                <Text>Time/Date: </Text>
-                <Text style={styles.timeStyle}>Time here</Text>
-              </View>
+          <View style={styles.rowView}>
+            <View style={styles.buttonContainer}>
+              <TouchableOpacity>
+                <Text style={styles.button}>
+                  Search
+                </Text>
+              </TouchableOpacity>
+            </View>
 
-              <View style={styles.rowView}>
-                <Text>Geolocation: </Text>
-                <Text style={styles.addressStyle}>Address Here</Text>
-              </View>
+            <View style={styles.buttonContainer}>
+              <TouchableOpacity >
+                <Text style={styles.button}>
+                  Cancel
+                </Text>
+              </TouchableOpacity>
             </View>
 
           </View>
-          <View style={styles.buttonContainer}>
-            <TouchableOpacity>
-              <Text style={styles.button}>
-                Submit
-              </Text>
-            </TouchableOpacity>
-          </View>
 
-          <View style={styles.buttonContainer}>
-            <TouchableOpacity >
-              <Text style={styles.button}>
-                Cancel
-              </Text>
-            </TouchableOpacity>
-          </View>
+          <View style={styles.line} />      
 
+          <View style={[styles.rowView, styles.titleContainer]}>
+            <Text style={styles.tableHeading1style}>
+              UPC#
+            </Text>
+            <Text style={styles.tableHeading2style}>
+              Unique ID
+            </Text>
+            <Text style={styles.tableHeading3style}>
+              Recieve Date
+            </Text>
+          </View>
         </KeyboardAvoidingView>
       </View>
     )
