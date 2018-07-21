@@ -14,6 +14,10 @@ export default class MainMenuScreen extends Component {
     const { navigate } = this.props.navigation;
     navigate('InventoryDetailsScreen')
   }
+  onRewardScreenClick() {    
+    const { navigate } = this.props.navigation;
+    navigate('RewardScreen')
+  }
   render () {
     return (
       <View style={styles.container}>
@@ -59,7 +63,7 @@ export default class MainMenuScreen extends Component {
         </View>
         
         <View style={styles.buttonContainer}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={this.onRewardScreenClick.bind(this)}>
             <Text style={styles.button}>
               Reward Balance
             </Text>
