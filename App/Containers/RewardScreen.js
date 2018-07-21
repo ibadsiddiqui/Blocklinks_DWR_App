@@ -36,58 +36,27 @@ export default class RewardScreen extends Component {
 
           <View style={styles.centered}>
 
-            <View style={styles.rowView}>
-              <Text style={styles.rowText}>Pallet #: </Text>
-              <TextInput style={[styles.field, styles.palletPadding]}/>
+            <View>
+              <Text style={styles.accountHeading}>Account#:</Text>
+            </View>
+            <View >
+              <Text style={styles.text}>453643543545egg456egdgdg4353gdsgdgd</Text>
             </View>
 
-            <View style={styles.rowView}>
-              <Text style={styles.rowText}>Box #: </Text>
-              <TextInput style={[styles.field, styles.boxInputPadding]}/>
+            <View>
+              <Text style={styles.balanceHeading}>Balance:</Text>
             </View>
-
-            <View style={styles.rowView}>
-              <Text style={styles.rowText}>Unique ID:</Text>
-              <TextInput style={[styles.field, styles.uniqueIDPadding]}/>
+            <View>
+              <Text style={styles.text}>1000 Truzr Coin</Text>
             </View>
-
-            <View style={styles.userInfo}>
-              <View style={styles.rowView}>
-                <Text>User ID:</Text>
-                <Text style={styles.userIDStyle}>Ibad-0110</Text>        
-              </View>
-
-              <View style={styles.rowView}>
-                <Text>Business: </Text>
-                <Text style={styles.businessStyle}>Gul Ahmed Garments.</Text>
-              </View>
-
-              <View style={styles.rowView}>
-                <Text>Time/Date: </Text>
-                <Text style={styles.timeStyle}>Time here</Text>
-              </View>
-
-              <View style={styles.rowView}>
-                <Text>Geolocation: </Text>
-                <Text style={styles.addressStyle}>Address Here</Text>
-              </View>
-            </View>
-
-          </View>
-          <View style={styles.buttonContainer}>
-            <TouchableOpacity>
-              <Text style={styles.button}>
-                Submit
-              </Text>
-            </TouchableOpacity>
-          </View>
 
           <View style={styles.buttonContainer}>
             <TouchableOpacity >
               <Text style={styles.button}>
-                Cancel
+                Done
               </Text>
             </TouchableOpacity>
+            </View>
           </View>
 
         </KeyboardAvoidingView>
