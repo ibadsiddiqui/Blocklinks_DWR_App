@@ -117,6 +117,8 @@ export default StyleSheet.create({
     borderBottomWidth: Metrics.horizontalLineHeight, 
     alignItems: 'center',
     width: Metrics.screenWidth * 0.83,
+    margin: 10,
+
     marginLeft: Metrics.screenWidth * 0.08
   }
 
