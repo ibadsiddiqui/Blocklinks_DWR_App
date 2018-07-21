@@ -16,21 +16,22 @@ export default StyleSheet.create({
   backLogo:{
     height: Metrics.images.large,
     width: Metrics.images.large,
+    marginBottom: 0
   },
   buttonContainer:{ 
     padding:10,
     margin: 10,
-    left: Metrics.screenWidth * 0.18,
+    left: Metrics.screenWidth * 0.15,
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
     backgroundColor: '#e64a19',
-    width: 210,
+    width: 110,
     borderRadius: 5,
   },
 
   button:{
-    fontSize: 20,
+    fontSize: 15,
     color: 'white'
   },
 
@@ -56,7 +57,8 @@ export default StyleSheet.create({
     margin: 7,
     marginTop: 0,
     backgroundColor: '#ef5350',
-    width: 150
+    width: 150,
+    color: 'white'
   },
   
   palletPadding:{
@@ -77,21 +79,17 @@ export default StyleSheet.create({
   },
   
   titleContainer:{
-    padding: 10,
-    left: Metrics.screenWidth * 0.12,
-    // marginTop: Metrics.screenHeight * 0.1,  
-    marginBottom: Metrics.baseMargin
+    alignItems: 'center',
+
   },
   
   title:{
     color: '#263238',
-    fontSize: 35
+    fontSize: 30,
+
   },
   timeStyle:{
     marginLeft: Metrics.baseMargin
-  },
-  userIDStyle:{
-    marginLeft:  Metrics.baseMargin * 3.5
   },
   
   userInfo:{
@@ -100,5 +98,36 @@ export default StyleSheet.create({
   },
   uniqueIDPadding:{
     marginLeft: Metrics.baseMargin * 2
+  },
+  UPCIDPadding:{
+    marginLeft: Metrics.baseMargin * 4
+  },
+
+  tableHeading1style:{
+    padding: 10,
+    fontSize: 15,
+    textDecorationLine: 'underline'
+  },
+  tableHeading2style:{
+    padding: 10,
+    marginLeft: Metrics.screenWidth * 0.2 ,
+    fontSize: 15,
+    textDecorationLine: 'underline'
+
+  },
+  tableHeading3style:{
+    padding: 10,
+    marginLeft: Metrics.screenWidth * 0.1,
+    fontSize: 15,
+    textDecorationLine: 'underline'
+
+  },
+  line:{ 
+    borderBottomColor: 'black', 
+    borderBottomWidth: Metrics.horizontalLineHeight, 
+    alignItems: 'center',
+    width: Metrics.screenWidth * 0.83,
+    marginLeft: Metrics.screenWidth * 0.08
   }
+
 })
