@@ -12,14 +12,14 @@ import styles from './Styles/NavigationStyles'
 
 // Manifest of possible screens
 const PrimaryNav = StackNavigator({
+  LaunchScreen: { screen: LaunchScreen },
+  LoginScreen: { screen: LoginScreen },
+  MainMenuScreen: { screen: MainMenuScreen },
   RetailerReturnScreen: { screen: RetailerReturnScreen },
   SaleScreen: { screen: SaleScreen },
   RewardScreen: { screen: RewardScreen },
   InventoryDetailsScreen: { screen: InventoryDetailsScreen },
   RecieveProductScreen: { screen: RecieveProductScreen },
-  MainMenuScreen: { screen: MainMenuScreen },
-  LoginScreen: { screen: LoginScreen },
-  LaunchScreen: { screen: LaunchScreen },
 }, {
   // Default config for all screens
   headerMode: 'none',
