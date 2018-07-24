@@ -22,6 +22,10 @@ export default class MainMenuScreen extends Component {
     const { navigate } = this.props.navigation;
     navigate('SaleScreen')
   }
+  onRetailerReturnScreenClick() {    
+    const { navigate } = this.props.navigation;
+    navigate('SaleScreen')
+  }
   render () {
     return (
       <View style={styles.container}>
@@ -59,7 +63,7 @@ export default class MainMenuScreen extends Component {
         </View>
         
         <View style={styles.buttonContainer}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={this.onRetailerReturnScreenClick.bind(this)}>
             <Text style={styles.button}>
               Retailer Returns
             </Text>
