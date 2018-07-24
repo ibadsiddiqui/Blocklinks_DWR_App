@@ -7,26 +7,71 @@ import { connect } from 'react-redux'
 // Styles
 import styles from './Styles/RetailerReturnScreenStyle'
 
-class RetailerReturnScreen extends Component {
+export default class RetailerReturnScreen extends Component {
+  onBackBtnPress(){
+    const {navigate} = this.props.navigation;
+    navigate('MainMenuScreen')
+  }
+
   render () {
     return (
-      <ScrollView style={styles.container}>
+      <View style={styles.container}>
         <KeyboardAvoidingView behavior='position'>
-          <Text>RetailerReturnScreen</Text>
+
+          <TouchableOpacity onPress={this.onBackBtnPress.bind(this)}>
+            <Image source={Images.backButton} style={styles.backLogo}/>
+          </TouchableOpacity>
+          <View style={[styles.titleContainer, styles.centered]}>
+            <Text style={styles.title}>
+              Retailer Return
+            </Text>
+            <View style={{ borderBottomColor: 'black', borderBottomWidth: 1, width: 100}} />      
+
+          </View>
+
+          <View style={styles.centered}>
+
+            <View style={styles.rowView}>
+              <Text style={styles.rowText}>Unique ID* : </Text>
+              <TextInput style={[styles.field, styles.UniqueIDPadding]}/>
+            </View>
+
+            <View style={styles.rowView}>
+              <Text style={styles.rowText}>Customer Id: </Text>
+              <TextInput style={[styles.field, styles.boxInputPadding]}/>
+            </View>
+
+            <View style={styles.rowView}>
+              <Text style={styles.rowText}>Reason of Return:</Text>
+              <TextInput style={[styles.field, styles.retailerIDPadding]}/>
+            </View>
+
+            <View style={styles.rowView}>
+              <Text style={styles.rowText}>Retailer ID:</Text>
+              <TextInput style={[styles.field, styles.TimePadding]}/>
+            </View>
+
+            <View style={styles.rowView}>
+              <Text style={styles.rowText}>Time & Date:</Text>
+              <TextInput style={[styles.field, styles.GeolocationPadding]}/>
+            </View>
+
+            <View style={styles.rowView}>
+              <Text style={styles.rowText}>Geo-Location:</Text>
+              <TextInput style={[styles.field, styles.GeolocationPadding]}/>
+            </View>
+              <View style={styles.buttonContainer}>
+                <TouchableOpacity>
+                  <Text style={styles.button}>
+                    Submit
+                  </Text>
+                </TouchableOpacity>
+              </View>
+
+          </View>
+  
         </KeyboardAvoidingView>
-      </ScrollView>
+      </View>
     )
   }
 }
-
-const mapStateToProps = (state) => {
-  return {
-  }
-}
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(RetailerReturnScreen)

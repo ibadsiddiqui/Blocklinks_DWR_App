@@ -3,23 +3,21 @@ import { Metrics, ApplicationStyles } from '../../Themes/'
 
 export default StyleSheet.create({
   ...ApplicationStyles.screen,
-  addressStyle:{
-    marginLeft: Metrics.baseMargin * 0.3
-  },
-  
+
   container:{
     flex: 1,
     justifyContent: 'flex-start',
     alignItems: 'stretch',
     backgroundColor: 'white'
   },
+
   backLogo:{
     height: Metrics.images.large,
     width: Metrics.images.large,
   },
   buttonContainer:{ 
     padding:10,
-    marginTop: Metrics.screenHeight * 0.12,
+    margin: 10,
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
@@ -37,18 +35,45 @@ export default StyleSheet.create({
     marginLeft: Metrics.baseMargin * 2
   },
 
+  boxInputPadding:{
+    marginLeft: Metrics.screenWidth * 0.1
+  },
+
   centered: {
     alignItems: 'center',
     padding:10,
   },
 
+  
+  field:{
+    borderRadius: 5,
+    padding: 5,
+    paddingLeft: 8,
+    margin: 7,
+    marginTop: 0,
+    backgroundColor: '#ef5350',
+    width: 110,
+    color: 'white'
+  },
+  
+  UniqueIDPadding:{
+    marginLeft: Metrics.screenWidth * 0.12
+  },
+  
+  retailerIDPadding:{
+    marginLeft: Metrics.screenWidth * 0.15
+  },
+  
+  rowText:{
+    fontSize: 15,
+    marginTop: 15,
+  },
   rowView:{
     flexDirection: 'row',
   },
-    
+  
   titleContainer:{
     padding: 10,
-    left: Metrics.screenWidth * 0.12,
     marginBottom: Metrics.baseMargin
   },
   
@@ -56,20 +81,19 @@ export default StyleSheet.create({
     color: '#263238',
     fontSize: 35
   },
-
-  accountHeading:{
-    fontSize: 20,
-    fontWeight: "700",
-    marginTop: Metrics.screenHeight * 0.1
+  timeStyle:{
+    marginRight: Metrics.screenWidth * 0.1
   },
+  
 
-  balanceHeading:{
-    fontSize: 20,
-    fontWeight: "700",
-    marginTop: Metrics.screenHeight * 0.1
-
+  uniqueIDPadding:{
+    marginLeft: Metrics.baseMargin * 2
   },
-  text:{
-    fontSize: 15
+  TimePadding:{
+    marginLeft: Metrics.screenWidth * 0.12
+  },
+  GeolocationPadding:{
+    marginLeft: Metrics.screenWidth * 0.12
+
   }
 })
