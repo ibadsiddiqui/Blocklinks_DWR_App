@@ -1,4 +1,5 @@
 import { StackNavigator } from 'react-navigation'
+import RetailerReturnScreen from '../Containers/RetailerReturnScreen'
 import SaleScreen from '../Containers/SaleScreen'
 import RewardScreen from '../Containers/RewardScreen'
 import InventoryDetailsScreen from '../Containers/InventoryDetailsScreen'
@@ -11,6 +12,7 @@ import styles from './Styles/NavigationStyles'
 
 // Manifest of possible screens
 const PrimaryNav = StackNavigator({
+  RetailerReturnScreen: { screen: RetailerReturnScreen },
   SaleScreen: { screen: SaleScreen },
   RewardScreen: { screen: RewardScreen },
   InventoryDetailsScreen: { screen: InventoryDetailsScreen },
