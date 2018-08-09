@@ -10,11 +10,37 @@ import styles from './Styles/RegisterationScreenStyle'
 class RegisterationScreen extends Component {
   render () {
     return (
-      <ScrollView style={styles.container}>
+      <View style={styles.container}>
         <KeyboardAvoidingView behavior='position'>
+          <View style={styles.titleContainer}>
+            <Text style={styles.title}>
+              Welcome Back, User!
+            </Text>
+          </View>
+          
+          <View style={styles.field}>
+            <TextInput 
+              placeholder="Email"
+              style={styles.textInput}/>
+          </View>
+
+          <View style={styles.field}>
+            <TextInput 
+              placeholder="Password"
+              style={styles.textInput}/>
+          </View>
+
+          <View style={styles.buttonContainer}>
+            <TouchableOpacity onPress={this.onSubmit.bind(this)}>
+              <Text style={styles.button}>
+                Sign In
+              </Text>
+            </TouchableOpacity>
           <Text>RegisterationScreen</Text>
+          </View>
         </KeyboardAvoidingView>
-      </ScrollView>
+        </View>
+
     )
   }
 }
