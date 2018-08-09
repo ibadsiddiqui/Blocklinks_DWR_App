@@ -15,10 +15,15 @@ import styles from './Styles/LaunchScreenStyles'
 export default class LaunchScreen extends Component {
   
   onPressLogin(){
-      const { navigate } = this.props.navigation;
-      navigate('LoginScreen')
+    const { navigate } = this.props.navigation;
+    navigate('LoginScreen')
   }
 
+  onPressRegisteration() {
+    const { navigate } = this.props.navigation;
+    navigate('RegisterationScreen');
+    
+  }
   render () {
     return (
       <View style={styles.mainContainer}>
@@ -42,7 +47,7 @@ export default class LaunchScreen extends Component {
             <View style={{ borderBottomColor: 'black', borderBottomWidth: 1}} />
 
             <View>
-              <TouchableOpacity style={styles.btnRegister}>
+              <TouchableOpacity style={styles.btnRegister} onPress={this.onPressRegisteration.bind(this)}>
                 <Text style={styles.btnRegisterText}>New? Register here.</Text>  
               </TouchableOpacity>
             </View>
