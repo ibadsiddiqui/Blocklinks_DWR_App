@@ -1,20 +1,27 @@
 import React, { Component } from 'react'
-import { ScrollView, Text, KeyboardAvoidingView } from 'react-native'
-import { connect } from 'react-redux'
-// Add Actions - replace 'Your' with whatever your reducer is called :)
-// import YourActions from '../Redux/YourRedux'
+import { 
+  View, 
+  Text, 
+  KeyboardAvoidingView,
+  TextInput,
+  TouchableOpacity
+} from 'react-native'
 
 // Styles
 import styles from './Styles/RegisterationScreenStyle'
 
-class RegisterationScreen extends Component {
+export default class RegisterationScreen extends Component {
+  onSubmit(){
+    const { navigate } = this.props.navigation;
+    navigate('MainMenuScreen')
+  }
   render () {
     return (
       <View style={styles.container}>
         <KeyboardAvoidingView behavior='position'>
           <View style={styles.titleContainer}>
             <Text style={styles.title}>
-              Welcome Back, User!
+              Welcome User!
             </Text>
           </View>
           
@@ -36,7 +43,6 @@ class RegisterationScreen extends Component {
                 Sign In
               </Text>
             </TouchableOpacity>
-          <Text>RegisterationScreen</Text>
           </View>
         </KeyboardAvoidingView>
         </View>
@@ -44,15 +50,3 @@ class RegisterationScreen extends Component {
     )
   }
 }
-
-const mapStateToProps = (state) => {
-  return {
-  }
-}
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(RegisterationScreen)
